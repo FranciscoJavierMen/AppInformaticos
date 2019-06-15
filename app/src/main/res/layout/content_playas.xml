@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Playas"
+    tools:showIn="@layout/activity_playas">
+
+    <ImageView
+        android:id="@+id/imgCiudades"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/playa_1" />
+
+    <TextView
+        android:id="@+id/txtCiudades"
+        android:layout_below="@+id/imgCiudades"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/playas_a_mostrar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/layoutCheckbox"
+        android:layout_below="@+id/txtCiudades"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkBoxp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp1" />
+            <CheckBox
+                android:id="@+id/checkBoxp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp2" />
+            <CheckBox
+                android:id="@+id/checkBoxp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp3" />
+            <CheckBox
+                android:id="@+id/checkBoxp4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp4" />
+            <CheckBox
+                android:id="@+id/checkBoxp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp5" />
+            <CheckBox
+                android:id="@+id/checkBoxp6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp6" />
+            <CheckBox
+                android:id="@+id/checkBoxp7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp7" />
+            <CheckBox
+                android:id="@+id/checkBoxp8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp8" />
+            <CheckBox
+                android:id="@+id/checkBoxp9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp9" />
+            <CheckBox
+                android:id="@+id/checkBoxp10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxp10" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnPlayas"
+        android:layout_below="@+id/layoutCheckbox"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/enviar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
